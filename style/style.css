@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#game{
+    height: 350px;
+    width: 550px;
+    margin: 25px auto;
+    border: 1px solid black;
+    position: relative;
+
+}
+#score{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+#dino{
+position: absolute;
+height: 70px;
+width: 30px;
+margin: 0px;
+margin-left: 2px;
+background-color: royalblue;
+top: 80%;
+
+}
+#cac{
+position: absolute;
+height: 30px;
+width: 30px;
+background-color: red;
+right: 0%;
+bottom: 0%;
+border-radius: 40%;
+animation: roll 1s  infinite linear ;
+
+}
+.animate{
+    animation: jmp 0.4s  linear ;
+}
+
+@keyframes jmp{
+    0%{top: 80%;}
+    /* 10%{top: 0%;} */
+    30%{top: 27%;}
+    40%{top: 27%;}
+    100%{top: 80%;}
+
+}
+
+@keyframes roll{
+    0%{right: 0%;}
+    /* 0%{right: 0%;} */
+    100%{right: 96%;}
+}
