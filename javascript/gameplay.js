@@ -36,7 +36,7 @@ else{
 var checkDead = setInterval( chk,10);
 
   document.body.onkeyup = function(e){
-    if(e.keyCode == 32 || e.keycode == 38){
+    if(e.keyCode == 32 || 38){
     jmp(); 
     console.log('you pressed space'); 
     }
